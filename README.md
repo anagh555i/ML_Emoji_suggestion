@@ -41,6 +41,8 @@ Make sure you have Python installed (version 3.7+ recommended). Required librari
 - Jupyter Notebook
 - Major libraries: `numpy`, `pandas`, `scikit‑learn`, possibly `tensorflow` or `pytorch` (depending on your implementation)
 - Any additional dependencies listed in a future `requirements.txt`
+- Dataset required: `tweeteval-a-multi-task-classification-benchmark`
+- pre-trained word vectors : `Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased, 25d, 50d, 100d, & 200d vectors, 1.42 GB download)`
 
 ### Instructions
 1. Clone the repo:
@@ -48,13 +50,21 @@ Make sure you have Python installed (version 3.7+ recommended). Required librari
    git clone https://github.com/anagh555i/ML_Emoji_suggestion.git
    cd ML_Emoji_suggestion
    ```
-2. Open the training notebook:
+2. Download and extract Dataset into the same folder:
+    ```
+   https://www.kaggle.com/datasets/thedevastator/tweeteval-a-multi-task-classification-benchmark/data
+    ```
+3. Download and extract the pretrained word vector models:
+   ```
+   https://nlp.stanford.edu/projects/glove/
+    ```
+4. Open the training notebook:
    ```bash
    jupyter notebook modelTraining.ipynb
    ```
    - Run through the data preprocessing steps, feature engineering, model training and saving the model.
-3. To test/infer: open `main.ipynb` and supply sample texts to generate suggested emojis.
-4. Use `Testing.ipynb` to evaluate and experiment with different model architectures or parameters.
+5. To test/infer: open `main.ipynb` and supply sample texts to generate suggested emojis.
+6. Use `Testing.ipynb` to evaluate and experiment with different model architectures or parameters.
 
 ## 📊 Sample Usage
 In `main.ipynb`, provide input like:
