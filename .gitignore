@@ -3,6 +3,16 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# dataset 
+*.csv 
+*.txt 
+
+# trained models 
+*.keras
+
+# vocabulary 
+vocab.pkl
+
 # C extensions
 *.so
 
